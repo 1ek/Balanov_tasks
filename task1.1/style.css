@@ -1,0 +1,227 @@
+body {
+  margin: 20px;
+}
+
+.all{
+  flex-direction: column;
+}
+
+.container {
+  width: 1088px;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.container > :first-child{
+  margin-right: 40px;
+}
+
+.img {
+  width: 100%;
+}
+
+.vector-icon{
+    background: url(icons/vector.svg) no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+
+}
+
+.color-text{
+    color: #34ACA7;
+}
+
+.flex {
+  display: flex;
+}
+
+/* ##################### ASIDE ####################### */
+
+.aside {
+  flex-direction: column;
+  flex: 1 ;
+}
+
+.aside-nav a {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.aside-nav img {
+  margin-right: 20px;
+}
+
+.aside-nav a:hover{
+  background: #34ACA7;
+  color: #fff;
+}
+
+/************ TWEET ************/
+
+.aside .tweet{
+    flex-direction: column;
+}
+
+.aside .tweet button{
+    height: 30px;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding-left: 30px;
+    cursor: pointer;
+
+}
+
+.aside .tweet button:active{
+    background-color: #34ACA7;
+    color: #fff;
+}
+
+.aside .tweet p{
+    font-size: 10px;
+    line-height: 2em;
+    margin-top: -10px;
+}
+
+/* ################## MAIN ####################*/
+
+.main{
+    flex: 5;
+    flex-direction: column;
+}
+
+.banner-text-1{
+  position: absolute;
+  background-color: #fff;
+  font-size: 22px;
+  top: 285px;
+  padding: 10px 25px;
+}
+
+.banner-text-2{
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  top: 330px;
+  padding: 10px 25px;
+
+}
+
+.main-nav{
+  flex-direction: row;
+  margin-top: -5px;
+}
+
+.main-nav .step{
+  flex: 1;
+}
+
+.main-nav .step a{
+    display: block;
+    padding: 25px 20px;
+    background-color: #eff8f7;
+}
+
+.main-nav .step h3,
+.main-nav .step p{
+  margin: 0;
+}
+
+.main-nav .step p{
+  font-size: 10px;
+}
+
+.main-nav .step a:hover{
+  background-color: #d9efec;
+}
+
+/************** SUBSCRIBE **************/
+
+.subscribe{
+  flex-direction: row;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.subscribe-margin{
+  margin: 0 15px;
+}
+
+.subscribe button{
+  background: linear-gradient(180deg, #ffffff 0%, #aaaaaa 100%);
+  border-radius: 1px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.subscribe button:active{
+background: #444;
+color: #fff;
+}
+
+.subscribe input,
+.subscribe button{
+  padding: 5px 15px;
+}
+
+/************** POSTS ***************/
+
+.posts{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post{
+    margin-top: 40px;
+    flex: 1;
+    max-width: min-content;
+}
+
+.posts img{
+  padding: 10px;
+  border: 1px solid #aaa;
+  width: 185px;
+}
+
+.post-footer-date {
+  color: #aaa;
+}
+
+.post-footer-date::after{
+  content: " /";
+}
+
+.post-footer a::after{
+  content: "...";
+}
+
+/*################ FOOTER #################*/
+
+footer{
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-text{
+  flex-direction: column;
+}
+
+.footer-nav > ::after{
+content: " | ";
+}
+
+.footer-nav > :last-child::after{
+  content: "";
+}
+
+.footer-copyright{
+  color: #aaa;
+}
+
+
