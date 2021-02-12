@@ -46,6 +46,7 @@ body {
   flex-direction: row;
   align-items: center;
   margin-bottom: 30px;
+  border: 1px solid #fff;
 }
 
 .aside-nav img {
@@ -53,8 +54,7 @@ body {
 }
 
 .aside-nav a:hover{
-  background: #34ACA7;
-  color: #fff;
+  border: 1px solid #34ACA7;
 }
 
 /************ TWEET ************/
