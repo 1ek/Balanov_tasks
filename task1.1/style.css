@@ -206,7 +206,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
-  border-top: 1px solid #aaa;
+  border-top: 2px solid #aaa;
 }
 
 .footer-text{
