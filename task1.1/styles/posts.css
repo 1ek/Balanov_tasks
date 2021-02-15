@@ -6,7 +6,7 @@
 
 .post {
   margin-top: 40px;
-  width: 200px
+  flex: 0 1 210px;
 }
 
 .post p{
