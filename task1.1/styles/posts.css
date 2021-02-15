@@ -6,8 +6,7 @@
 
 .post {
   margin-top: 40px;
-  margin-right: 20px;
-  width: 200px;
+  width: 200px
 }
 
 .post p{
@@ -30,8 +29,4 @@
 
 .post-footer a::after {
   content: "...";
-}
-
-.posts > :nth-child(n+4){
-margin-right: 0;
 }
