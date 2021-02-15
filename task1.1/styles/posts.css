@@ -6,8 +6,8 @@
 
 .post {
   margin-top: 40px;
-  flex: 1;
-  max-width: min-content;
+  margin-right: 20px;
+  width: 200px;
 }
 
 .post p{
@@ -17,7 +17,7 @@
 .posts img {
   padding: 10px;
   border: 1px solid #aaa;
-  width: 185px;
+  max-width: -webkit-fill-available;
 }
 
 .post-footer-date {
@@ -30,4 +30,8 @@
 
 .post-footer a::after {
   content: "...";
+}
+
+.posts > :nth-child(n+4){
+margin-right: 0;
 }
