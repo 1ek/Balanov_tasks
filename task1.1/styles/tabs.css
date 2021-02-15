@@ -12,10 +12,11 @@
   background-color: #eff8f7;
 }
 
+.tab a:hover {
+  background-color: #d9efec;
+}
+
 .tab p {
   font-size: 10px;
 }
 
-.tab a:hover {
-  background-color: #d9efec;
-}
