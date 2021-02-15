@@ -1,0 +1,29 @@
+.subscribe {
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+  border-bottom: 1px dashed #aaa;
+  padding: 10px 0;
+  border-top: 1px dashed #aaa;
+}
+
+.subscribe-margin {
+  margin: 0 15px;
+}
+
+.subscribe button {
+  background: linear-gradient(180deg, #ffffff 0%, #aaaaaa 100%);
+  border-radius: 1px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.subscribe button:active {
+  background: #444;
+  color: #fff;
+}
+
+.subscribe input,
+.subscribe button {
+  padding: 5px 15px;
+}

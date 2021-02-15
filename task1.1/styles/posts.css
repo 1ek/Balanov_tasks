@@ -1,0 +1,33 @@
+.posts {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post {
+  margin-top: 40px;
+  flex: 1;
+  max-width: min-content;
+}
+
+.post p{
+  margin-top: 10px;
+}
+
+.posts img {
+  padding: 10px;
+  border: 1px solid #aaa;
+  width: 185px;
+}
+
+.post-footer-date {
+  color: #aaa;
+}
+
+.post-footer-date::after {
+  content: " /";
+}
+
+.post-footer a::after {
+  content: "...";
+}

@@ -1,0 +1,22 @@
+.banner-text{
+  position: absolute;
+  top: 300px;
+  width: 800px;
+}
+
+.banner-text p{
+max-width: max-content;
+}
+
+.banner-text-1 {
+  background-color: #fff;
+  font-size: 22px;
+  padding: 10px 25px;
+}
+
+.banner-text-2 {
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+}

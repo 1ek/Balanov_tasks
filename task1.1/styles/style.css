@@ -1,0 +1,83 @@
+body {
+  margin: 20px;
+}
+
+.all {
+  flex-direction: column;
+  width: 1088px;
+  margin: 0 auto;
+}
+
+.container {
+  flex-direction: row;
+}
+
+.container > :first-child {
+  margin-right: 40px;
+}
+
+.main {
+  flex: 5;
+  flex-direction: column;
+}
+
+.aside {
+  flex-direction: column;
+  flex: 1;
+}
+
+.img {
+  width: 100%;
+}
+
+.text10px {
+  font-size: 10px;
+}
+
+.color-text {
+  color: #34aca7;
+}
+
+.flex {
+  display: flex;
+}
+
+.icon-alist {
+  background: url(../img/icons/a-list-icon.svg) no-repeat;
+}
+
+.icon-about {
+  background: url(../img/icons/about-icon.svg)no-repeat;
+}
+
+.icon-blog {
+  background: url(../img/icons/blog-icon.svg)no-repeat;
+}
+
+.icon-camera {
+  background: url(../img/icons/camera-icon.svg)no-repeat;
+}
+
+.icon-fb {
+  background: url(../img/icons/fb-icon.svg)no-repeat;
+}
+
+.icon-food {
+  background: url(../img/icons/food-icon.svg)no-repeat;
+}
+
+.icon-mail {
+  background: url(../img/icons/mail-icon.svg)no-repeat;
+}
+
+.icon-rss {
+  background: url(../img/icons/rss-icon.svg)no-repeat;
+}
+
+.icon-twitter {
+  background: url(../img/icons/twitter-icon.svg)no-repeat;
+}
+
+.icon-vector {
+  background: url(../img/icons/vector-color.svg) no-repeat;
+}

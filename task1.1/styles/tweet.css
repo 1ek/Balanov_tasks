@@ -1,0 +1,21 @@
+.tweet-button {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 9px; 
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+  background-size: 20px;
+  background-position-x: 5px;
+  background-position-y: center;
+}
+
+.tweet-button:active {
+  border-color: #000;
+}
+
+.tweet-commnunity p {
+  margin-top: 10px;
+  line-height: 2em;
+}

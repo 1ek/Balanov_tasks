@@ -1,0 +1,28 @@
+footer {
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  border-top: 2px solid #aaa;
+}
+
+.footer-text {
+  flex-direction: column;
+}
+
+.footer-nav > ::after {
+  content: " | ";
+}
+
+.footer-nav > :last-child::after {
+  content: "";
+}
+
+.footer-copyright {
+  color: #aaa;
+}
+
+.footer-icons{
+  filter: opacity(0.2);
+}

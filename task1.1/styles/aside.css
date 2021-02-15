@@ -1,0 +1,14 @@
+.aside-nav li {
+  border: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.aside-nav li:hover {
+  border: 1px solid #34aca7;
+}
+
+.aside-nav a{
+  display: block;
+  padding: 10px 45px;
+  background-position: left;
+}
