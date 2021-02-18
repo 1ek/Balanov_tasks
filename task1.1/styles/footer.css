@@ -1,28 +1,29 @@
 footer {
   height: 100px;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
-  border-top: 2px solid #aaa;
+  border-top: 2px solid #e5e5e5;
 }
 
-.footer-text {
-  flex-direction: column;
+.footer-nav-items > ::after {
+  content: "|";
+  margin: 0 5px 0 5px;
+  color: #e5e5e5;
 }
 
-.footer-nav > ::after {
-  content: " | ";
-}
-
-.footer-nav > :last-child::after {
+.footer-nav-items > :last-child::after {
   content: "";
 }
 
 .footer-copyright {
-  color: #aaa;
+  color: #e5e5e5;
 }
 
-.footer-icons{
-  filter: opacity(0.2);
+.footer-icon{
+width: 32px;
+height: 32px;
+background-size: cover;
+margin-right: 10px;
+filter: opacity(0.1);
 }

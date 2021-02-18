@@ -1,13 +1,8 @@
-.tabs {
-  flex-direction: row;
-}
-
 .tab {
   flex: 1;
 }
 
 .tab a {
-  display: block;
   padding: 25px 20px;
   background-color: #eff8f7;
 }

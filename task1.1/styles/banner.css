@@ -1,11 +1,15 @@
-.banner-text{
-  position: absolute;
-  top: 300px;
-  width: 800px;
+.banner {
+  height: 445px;
+  background-size: cover;
 }
 
-.banner-text p{
-max-width: max-content;
+.banner-text {
+  margin-top: 280px;
+}
+
+.banner-text-1,
+.banner-text-2 {
+  max-width: max-content;
 }
 
 .banner-text-1 {
@@ -17,6 +21,5 @@ max-width: max-content;
 .banner-text-2 {
   background-color: #000;
   color: #fff;
-  font-size: 14px;
   padding: 10px 25px;
 }

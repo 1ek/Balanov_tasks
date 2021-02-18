@@ -1,15 +1,12 @@
 body {
   margin: 20px;
+  font-family: Arial;
+  font-size: 14px;
 }
 
 .all {
-  flex-direction: column;
   width: 1088px;
   margin: 0 auto;
-}
-
-.container {
-  flex-direction: row;
 }
 
 .container > :first-child {
@@ -18,11 +15,9 @@ body {
 
 .main {
   flex: 5;
-  flex-direction: column;
 }
 
 .aside {
-  flex-direction: column;
   flex: 1;
 }
 
@@ -38,8 +33,22 @@ body {
   color: #34aca7;
 }
 
-.flex {
+.italic{
+  font-style: italic;
+}
+
+.flex-row {
   display: flex;
+  flex-direction: row;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.display-block{
+  display: block;
 }
 
 .icon-alist {
@@ -80,4 +89,8 @@ body {
 
 .icon-vector {
   background: url(../img/icons/vector-color.svg) no-repeat;
+}
+
+.img-banner{
+  background: url(../img/pictures/baner.png) no-repeat;
 }

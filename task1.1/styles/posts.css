@@ -1,26 +1,26 @@
 .posts {
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .post {
   margin-top: 40px;
-  flex: 0 1 210px;
+  flex: 0 1 205px;
 }
 
 .post p{
   margin-top: 10px;
+  line-height: 20px;
 }
 
 .posts img {
   padding: 10px;
-  border: 1px solid #aaa;
+  border: 1px solid #e5e5e5;
   max-width: -webkit-fill-available;
 }
 
 .post-footer-date {
-  color: #aaa;
+  color: #e5e5e5;
 }
 
 .post-footer-date::after {

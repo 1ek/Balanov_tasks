@@ -1,10 +1,10 @@
 .tweet-button {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 5px;
   padding: 9px; 
   border-radius: 5px;
-  border: 1px solid #aaa;
+  border: 1px solid #e5e5e5;
   cursor: pointer;
   background-size: 20px;
   background-position-x: 5px;
@@ -15,7 +15,17 @@
   border-color: #000;
 }
 
+.tweet-latest{
+  margin-top: 20px;
+}
+
 .tweet-commnunity p {
   margin-top: 10px;
   line-height: 2em;
+}
+
+.tweet-latest h5,
+.tweet-commnunity h5{
+border-bottom: 1px dashed #e5e5e5;
+padding-bottom: 5px;
 }
