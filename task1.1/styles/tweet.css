@@ -2,7 +2,7 @@
   width: 100%;
   margin-top: 10px;
   margin-bottom: 5px;
-  padding: 9px; 
+  padding: 9px;
   border-radius: 5px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
@@ -15,7 +15,7 @@
   border-color: #000;
 }
 
-.tweet-latest{
+.tweet-latest {
   margin-top: 20px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .tweet-latest h5,
-.tweet-commnunity h5{
-border-bottom: 1px dashed #e5e5e5;
-padding-bottom: 5px;
+.tweet-commnunity h5 {
+  border-bottom: 1px dashed #e5e5e5;
+  padding-bottom: 5px;
 }

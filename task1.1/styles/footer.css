@@ -20,17 +20,17 @@ footer {
   color: #e5e5e5;
 }
 
-.footer-icon{
-width: 32px;
-height: 32px;
-background-size: cover;
-filter: opacity(0.1);
+.footer-icon {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  filter: opacity(0.1);
 }
 
-.footer-icons-community > :nth-child(n){
+.footer-icons-community > :nth-child(n) {
   margin-right: 10px;
 }
 
-.footer-icons-community > :last-child{
+.footer-icons-community > :last-child {
   margin-right: 0px;
 }

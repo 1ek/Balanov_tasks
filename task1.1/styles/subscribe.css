@@ -8,19 +8,19 @@
   background-position-y: center;
 }
 
-.subscribe :nth-child(n){
+.subscribe :nth-child(n) {
   margin-right: 20px;
 }
 
-.subscribe :first-child{
-margin-left: 60px;
+.subscribe :first-child {
+  margin-left: 60px;
 }
 
-.subscribe input{
+.subscribe input {
   border: 1px solid #e5e5e5;
 }
 
-.subscribe input::placeholder{
+.subscribe input::placeholder {
   color: #e5e5e5;
 }
 
@@ -35,7 +35,6 @@ margin-left: 60px;
   background: #444;
   color: #fff;
 }
-
 
 .subscribe input,
 .subscribe button {
