@@ -24,6 +24,13 @@ footer {
 width: 32px;
 height: 32px;
 background-size: cover;
-margin-right: 10px;
 filter: opacity(0.1);
+}
+
+.footer-icons-community > :nth-child(n){
+  margin-right: 10px;
+}
+
+.footer-icons-community > :last-child{
+  margin-right: 0px;
 }
