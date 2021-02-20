@@ -21,40 +21,40 @@
 </head>
 
 <body>
-    <div class="all flex-col">
-        <div class="container flex-row">
+    <div class="all flex--col">
+        <div class="container flex--row">
 
-            <aside class="aside flex-col">
+            <aside class="aside flex--col">
                 <div class="logo">
                     <a href="#">
                         <img src="img/icons/icon-logo.svg" alt="icon-logo">
                     </a>
                 </div>
 
-                <nav class="aside-nav ">
+                <nav class="aside-nav">
                     <ul>
-                        <li>
-                            <a class="color-text icon-food display-block" href="#">
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__desc display--block color--text icon--food" href="#">
                                 Tastemakers
                             </a>
                         </li>
-                        <li>
-                            <a class="color-text icon-blog display-block" href="#">
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__desc display--block color--text icon--blog" href="#">
                                 Blog
                             </a>
                         </li>
-                        <li>
-                            <a class="color-text icon-alist display-block" href="#">
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__desc display--block color--text icon--alist" href="#">
                                 The A-List
                             </a>
                         </li>
-                        <li>
-                            <a class="color-text icon-camera display-block" href="#">
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__desc display--block color--text icon--camera" href="#">
                                 Contribure
                             </a>
                         </li>
-                        <li>
-                            <a class="color-text icon-about display-block" href="#">
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__desc display--block color--text icon--about" href="#">
                                 About
                             </a>
                         </li>
@@ -62,118 +62,118 @@
                 </nav>
 
                 <div class="tweet-latest">
-                    <h5>LATEST TWEET</h5>
-                    <button class="tweet-button text10px color-text  icon-vector"> Join the conversation</button>
+                    <h5 class="tweet-latest__header">LATEST TWEET</h5>
+                    <button class="tweet-latest__btn text10px color--text icon--vector"> Join the conversation</button>
                 </div>
                 <div class="tweet-commnunity">
-                    <h5>LET'S BE FRIENDS!</h5>
-                    <p class="text10px ">For weekly finds, community recommendations, and more, like us on Facebook.</p>
-                    <button class="tweet-button text10px color-text  icon-vector"> Join the Community</button>
+                    <h5 class="tweet-community__header">LET'S BE FRIENDS!</h5>
+                    <p class="tweet-community__desc text10px ">For weekly finds, community recommendations, and more, like us on Facebook.</p>
+                    <button class="tweet-community__btn text10px color--text icon--vector"> Join the Community</button>
                 </div>
 
             </aside>
 
-            <main class="main flex-col">
+            <main class="main flex--col">
 
-                <div class="banner img-banner">
-                    <div class="banner-text ">
-                        <p class="banner-text-1">Share your Foor Sence</p>
+                <div class="banner img--banner">
+                    <div class="banner__desc">
+                        <p class="banner__desc-1">Share your Foor Sence</p>
 
-                        <p class="banner-text-2">Submit yout favorite recipes, become a contributor, or get interviewed.
+                        <p class="banner__desc-2">Submit yout favorite recipes, become a contributor, or get interviewed.
                         </p>
                     </div>
                 </div>
 
-                <div class="tabs flex-row">
-                    <div class="tab">
-                        <a class="color-text display-block" href="#">
-                            <h3>Tastemakers</h3>
-                            <p class="text10px ">Feast your eyes & get reciepes!</p>
+                <div class="tabs flex--row">
+                    <div class="tabs__item">
+                        <a class="tabs__item-link color--text display--block" href="#">
+                            <h3 class="tabs__item-header">Tastemakers</h3>
+                            <p class="tabs__item-desc text10px ">Feast your eyes & get reciepes!</p>
                         </a>
                     </div>
-                    <div class="tab">
-                        <a class="color-text display-block" href="#">
-                            <h3>Blog</h3>
-                            <p class="text10px ">News, how-tos, stories, and more</p>
+                    <div class="tabs__item">
+                        <a class="tabs__item-link color--text display--block" href="#">
+                            <h3 class="tabs__item-header">Blog</h3>
+                            <p class="tabs__item-desc text10px ">News, how-tos, stories, and more</p>
                         </a>
                     </div>
-                    <div class="tab">
-                        <a class="color-text display-block" href="#">
-                            <h3>The A-List</h3>
-                            <p class="text10px ">Handpicked, absolute favorites</p>
+                    <div class="tabs__item">
+                        <a class="tabs__item-link color--text display--block" href="#">
+                            <h3 class="tabs__item-header">The A-List</h3>
+                            <p class="tabs__item-desc text10px ">Handpicked, absolute favorites</p>
                         </a>
                     </div>
-                    <div class="tab">
-                        <a class="color-text display-block" href="#">
-                            <h3>Contribute</h3>
-                            <p class="text10px ">We want to hear from you!</p>
+                    <div class="tabs__item">
+                        <a class="tabs__item-link color--text display--block" href="#">
+                            <h3 class="tabs__item-header">Contribute</h3>
+                            <p class="tabs__item-desc text10px ">We want to hear from you!</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="subscribe flex-row icon-mail">
-                    <p>Sign up for out newsletter to receive a handpicked selection of the best
+                <div class="sub flex--row icon--mail">
+                    <p class="sub__desc">Sign up for out newsletter to receive a handpicked selection of the best
                         stories, recipes, and news, delivered weekly to your inbox.</p>
-                    <input type="email" id="email" placeholder="Email">
-                    <button>Subscribe</button>
+                    <input class="sub__input" type="email" id="email" placeholder="Email">
+                    <button class="sub__btn">Subscribe</button>
                 </div>
 
-                <div class="posts flex-row">
-                    <article class="post">
-                        <a href="#"><img class="img" src="img/pictures/image-4.png" alt="image"></a>
-                        <h3>
-                            <a class="color-text" href="#">2012’s Best Summer Cookbooks</a>
+                <div class="posts flex--row">
+                    <article class="posts__item">
+                        <a href="#"><img class="posts__item-img img" src="img/pictures/image-4.png" alt="image"></a>
+                        <h3 class="posts__item-header">
+                            <a class="color--text" href="#">2012’s Best Summer Cookbooks</a>
                         </h3>
-                        <p class="text">
+                        <p class="posts__item-desc">
                             With the best of the season coming from “orchards, farms and gardens,” NPR has put together
                             an
                             impressive collection of 10 summer cookbooks.
                         </p>
-                        <div class="post-footer">
-                            <time class="post-footer-date">May 23, 2012</time>
-                            <a class="color-text" href="#">Read</a>
+                        <div class="posts__item-footer">
+                            <time class="posts__item-date">May 23, 2012</time>
+                            <a class="posts__item-link color--text" href="#">Read</a>
                         </div>
                     </article>
-                    <article class="post">
-                        <a href="#"><img class="img" src="img/pictures/image-1.png" alt="image"></a>
-                        <h3>
-                            <a class="color-text" href="#">How to Make Vegetable Chips</a>
+                    <article class="posts__item">
+                        <a href="#"><img class="posts__item-img img" src="img/pictures/image-1.png" alt="image"></a>
+                        <h3 class="posts__item-header">
+                            <a class="color--text" href="#">How to Make Vegetable Chips</a>
                         </h3>
-                        <p>
+                        <p class="posts__item-desc">
                             About a month ago, I ate almost an entire box of kale chips. My brother and I were visiting
                             our cousin in Brooklyn,
                             and before a very thoughtfully prepared vagan...
                         </p>
-                        <div class="post-footer">
-                            <time class="post-footer-date">May 17, 2012</time>
-                            <a class="color-text" href="#">Read</a>
+                        <div class="posts__item-footer">
+                            <time class="posts__item-date">May 17, 2012</time>
+                            <a class="posts__item-link color--text" href="#">Read</a>
                         </div>
                     </article>
-                    <article class="post">
-                        <a href="#"><img class="img" src="img/pictures/image-2.png" alt="image"></a>
-                        <h3>
-                            <a class="color-text" href="#">Join us on Pinterest!</a>
+                    <article class="posts__item">
+                        <a href="#"><img class="posts__item-img img" src="img/pictures/image-2.png" alt="image"></a>
+                        <h3 class="posts__item-header">
+                            <a class="color--text" href="#">Join us on Pinterest!</a>
                         </h3>
-                        <p>
+                        <p class="posts__item-desc">
                             If I could curate a cookbook for you, this would be it.
                         </p>
-                        <div class="post-footer">
-                            <time class="post-footer-date">May 23, 2012</time>
-                            <a class="color-text" href="#">Read</a>
+                        <div class="posts__item-footer">
+                            <time class="posts__item-date">May 23, 2012</time>
+                            <a class="posts__item-link color--text" href="#">Read</a>
                         </div>
                     </article>
-                    <article class="post">
-                        <a href="#"><img class="img" src="img/pictures/image-3.png" alt="image"></a>
-                        <h3>
-                            <a class="color-text" href="#">Recipes from a Sunday Supper</a>
+                    <article class="posts__item">
+                        <a href="#"><img class="posts__item-img img" src="img/pictures/image-3.png" alt="image"></a>
+                        <h3 class="posts__item-header">
+                            <a class="color--text" href="#">Recipes from a Sunday Supper</a>
                         </h3>
-                        <p>
+                        <p class="posts__item-desc">
                             I could not figure out what to do with the delectable slices of Pear Cake that
                             I brought home from this wonderful Sunday supper - eat them slowly, a little bit at...
                         </p>
-                        <div class="post-footer">
-                            <time class="post-footer-date">May 23, 2012</time>
-                            <a class="color-text" href="#">Read</a>
+                        <div class="posts__item-footer">
+                            <time class="posts__item-date">May 23, 2012</time>
+                            <a class="posts__item-link color--text" href="#">Read</a>
                         </div>
                     </article>
 
@@ -183,15 +183,15 @@
 
         </div>
 
-        <footer class="flex-row">
+        <footer class="flex--row">
 
-            <div class="footer-text flex-col">
+            <div class="footer-text flex--col">
 
                 <nav class="footer-nav">
-                    <ul class="footer-nav-items flex-row">
-                        <li><a class="color-text" href="#">Privacy Policy</a></li>
-                        <li><a class="color-text" href="#">Terms of Use</a></li>
-                        <li><a class="color-text" href="#">Contact</a></li>
+                    <ul class="footer-nav__items flex--row">
+                        <li><a class="color--text" href="#">Privacy Policy</a></li>
+                        <li><a class="color--text" href="#">Terms of Use</a></li>
+                        <li><a class="color--text" href="#">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -201,11 +201,11 @@
 
             </div>
 
-            <div class="footer-icons">
-                <ul class="flex-row footer-icons-community">
-                    <li><a class="display-block footer-icon icon-twitter" href="#"></a></li>
-                    <li><a class="display-block footer-icon icon-fb" href="#"></a></li>
-                    <li><a class="display-block footer-icon icon-rss" href="#"></a></li>
+            <div class="community">
+                <ul class="community-icons flex--row">
+                    <li><a class="community-icons__link display--block icon--twitter" href="#"></a></li>
+                    <li><a class="community-icons__link display--block icon--fb" href="#"></a></li>
+                    <li><a class="community-icons__link display--block icon--rss" href="#"></a></li>
                 </ul>
 
 

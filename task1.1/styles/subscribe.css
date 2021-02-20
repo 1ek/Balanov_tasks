@@ -1,4 +1,4 @@
-.subscribe {
+.sub {
   margin-top: 20px;
   align-items: center;
   border-bottom: 1px dashed #e5e5e5;
@@ -8,35 +8,35 @@
   background-position-y: center;
 }
 
-.subscribe :nth-child(n) {
+.sub :nth-child(n) {
   margin-right: 20px;
 }
 
-.subscribe :first-child {
+.sub :first-child {
   margin-left: 60px;
 }
 
-.subscribe input {
+.sub__input,
+.sub__btn {
+  padding: 5px 15px;
+}
+
+.sub__input {
   border: 1px solid #e5e5e5;
 }
 
-.subscribe input::placeholder {
+.sub__input::placeholder {
   color: #e5e5e5;
 }
 
-.subscribe button {
+.sub__btn {
   background: linear-gradient(180deg, #ffffff 0%, #aaaaaa 100%);
   border-radius: 1px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
 }
 
-.subscribe button:active {
+.sub__btn:active {
   background: #444;
   color: #fff;
-}
-
-.subscribe input,
-.subscribe button {
-  padding: 5px 15px;
 }

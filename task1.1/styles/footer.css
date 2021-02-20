@@ -1,18 +1,18 @@
 footer {
-  height: 100px;
+  height: 90px;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
   border-top: 2px solid #e5e5e5;
 }
 
-.footer-nav-items > ::after {
+.footer-nav__items > ::after {
   content: "|";
   margin: 0 5px 0 5px;
   color: #e5e5e5;
 }
 
-.footer-nav-items > :last-child::after {
+.footer-nav__items > :last-child::after {
   content: "";
 }
 
@@ -20,17 +20,17 @@ footer {
   color: #e5e5e5;
 }
 
-.footer-icon {
+.community-icons > :nth-child(n) {
+  margin-right: 10px;
+}
+
+.community-icons > :last-child {
+  margin-right: 0px;
+}
+
+.community-icons__link {
   width: 32px;
   height: 32px;
   background-size: cover;
   filter: opacity(0.1);
-}
-
-.footer-icons-community > :nth-child(n) {
-  margin-right: 10px;
-}
-
-.footer-icons-community > :last-child {
-  margin-right: 0px;
 }

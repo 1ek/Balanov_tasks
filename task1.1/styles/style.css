@@ -29,7 +29,7 @@ body {
   font-size: 10px;
 }
 
-.color-text {
+.color--text {
   color: #34aca7;
 }
 
@@ -37,60 +37,60 @@ body {
   font-style: italic;
 }
 
-.flex-row {
+.flex--row {
   display: flex;
   flex-direction: row;
 }
 
-.flex-col {
+.flex--col {
   display: flex;
   flex-direction: column;
 }
 
-.display-block {
+.display--block {
   display: block;
 }
 
-.icon-alist {
+.icon--alist {
   background: url(../img/icons/a-list-icon.svg) no-repeat;
 }
 
-.icon-about {
+.icon--about {
   background: url(../img/icons/about-icon.svg) no-repeat;
 }
 
-.icon-blog {
+.icon--blog {
   background: url(../img/icons/blog-icon.svg) no-repeat;
 }
 
-.icon-camera {
+.icon--camera {
   background: url(../img/icons/camera-icon.svg) no-repeat;
 }
 
-.icon-fb {
+.icon--fb {
   background: url(../img/icons/fb-icon.svg) no-repeat;
 }
 
-.icon-food {
+.icon--food {
   background: url(../img/icons/food-icon.svg) no-repeat;
 }
 
-.icon-mail {
+.icon--mail {
   background: url(../img/icons/mail-icon.svg) no-repeat;
 }
 
-.icon-rss {
+.icon--rss {
   background: url(../img/icons/rss-icon.svg) no-repeat;
 }
 
-.icon-twitter {
+.icon--twitter {
   background: url(../img/icons/twitter-icon.svg) no-repeat;
 }
 
-.icon-vector {
+.icon--vector {
   background: url(../img/icons/vector-color.svg) no-repeat;
 }
 
-.img-banner {
+.img--banner {
   background: url(../img/pictures/baner.png) no-repeat;
 }

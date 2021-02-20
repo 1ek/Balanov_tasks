@@ -2,24 +2,23 @@
   background-size: cover;
 }
 
-.banner-text {
+.banner__desc {
   margin-top: 30%;
   margin-bottom: 10%;
 }
 
-.banner-text-1,
-.banner-text-2 {
+.banner__desc-1,
+.banner__desc-2 {
   max-width: max-content;
+  padding: 10px 25px;
 }
 
-.banner-text-1 {
+.banner__desc-1 {
   background-color: #fff;
   font-size: 22px;
-  padding: 10px 25px;
 }
 
-.banner-text-2 {
+.banner__desc-2 {
   background-color: #000;
   color: #fff;
-  padding: 10px 25px;
 }

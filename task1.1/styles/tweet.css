@@ -1,4 +1,5 @@
-.tweet-button {
+.tweet-latest__btn,
+.tweet-community__btn {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -11,7 +12,8 @@
   background-position-y: center;
 }
 
-.tweet-button:active {
+.tweet-latest__btn:active,
+.tweet-community__btn:active {
   border-color: #000;
 }
 
@@ -19,13 +21,13 @@
   margin-top: 20px;
 }
 
-.tweet-commnunity p {
+.tweet-community__desc {
   margin-top: 10px;
   line-height: 2em;
 }
 
-.tweet-latest h5,
-.tweet-commnunity h5 {
+.tweet-latest__header,
+.tweet-community__header {
   border-bottom: 1px dashed #e5e5e5;
   padding-bottom: 5px;
 }

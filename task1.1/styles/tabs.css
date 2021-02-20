@@ -1,16 +1,16 @@
-.tab {
+.tabs__item {
   flex: 1;
 }
 
-.tab a {
+.tabs__item-link {
   padding: 25px 20px;
   background-color: #eff8f7;
 }
 
-.tab a:hover {
+.tabs__item-link:hover {
   background-color: #d9efec;
 }
 
-.tab p {
+.tabs__item-desc {
   font-size: 10px;
 }
