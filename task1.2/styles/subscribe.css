@@ -1,0 +1,42 @@
+.sub {
+  margin-top: 20px;
+  align-items: center;
+  border-bottom: 1px dashed #e5e5e5;
+  padding: 10px 0;
+  border-top: 1px dashed #e5e5e5;
+  background-position-x: 20px;
+  background-position-y: center;
+}
+
+.sub :nth-child(n) {
+  margin-right: 20px;
+}
+
+.sub :first-child {
+  margin-left: 60px;
+}
+
+.sub__input,
+.sub__btn {
+  padding: 5px 15px;
+}
+
+.sub__input {
+  border: 1px solid #e5e5e5;
+}
+
+.sub__input::placeholder {
+  color: #e5e5e5;
+}
+
+.sub__btn {
+  background: linear-gradient(180deg, #ffffff 0%, #aaaaaa 100%);
+  border-radius: 1px;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+
+.sub__btn:active {
+  background: #444;
+  color: #fff;
+}

@@ -1,0 +1,21 @@
+h1,h2,h3,h4,h5,p,span{
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+a {
+  text-decoration: none; /* Убираем подчёркивание у ссылок */
+}
+
+button:focus {
+  outline: none;
+}

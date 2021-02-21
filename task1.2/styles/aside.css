@@ -1,0 +1,13 @@
+.aside-nav__item {
+  border: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.aside-nav__item:hover {
+  border: 1px solid #34aca7;
+}
+
+.aside-nav__desc {
+  padding: 10px 45px;
+  background-position: left;
+}

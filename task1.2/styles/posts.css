@@ -1,0 +1,32 @@
+.posts {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.posts__item {
+  margin-top: 40px;
+  flex: 0 1 205px;
+}
+
+.posts__item-img {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  max-width: -webkit-fill-available;
+}
+
+.posts__item-desc {
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+.posts__item-date {
+  color: #e5e5e5;
+}
+
+.posts__item-date::after {
+  content: " /";
+}
+
+.posts__item-link::after {
+  content: "...";
+}

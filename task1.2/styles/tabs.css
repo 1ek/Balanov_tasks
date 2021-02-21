@@ -1,0 +1,16 @@
+.tabs__item {
+  flex: 1;
+}
+
+.tabs__item-link {
+  padding: 25px 20px;
+  background-color: #eff8f7;
+}
+
+.tabs__item-link:hover {
+  background-color: #d9efec;
+}
+
+.tabs__item-desc {
+  font-size: 10px;
+}
