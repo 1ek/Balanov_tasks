@@ -6,13 +6,13 @@ footer {
   border-top: 2px solid #e5e5e5;
 }
 
-.footer-nav__items > ::after {
+.footer-nav__list > ::after {
   content: "|";
   margin: 0 5px 0 5px;
   color: #e5e5e5;
 }
 
-.footer-nav__items > :last-child::after {
+.footer-nav__list > :last-child::after {
   content: "";
 }
 

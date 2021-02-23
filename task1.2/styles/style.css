@@ -1,16 +1,12 @@
 body {
-  margin: 20px;
   font-family: Arial;
   font-size: 14px;
-}
-
-.all {
   width: 1088px;
   margin: 0 auto;
 }
 
-.container > :first-child {
-  margin-right: 40px;
+.all {
+  margin: 20px;
 }
 
 .main {
@@ -19,6 +15,7 @@ body {
 
 .aside {
   flex: 1;
+  margin-right: 40px;
 }
 
 .img {

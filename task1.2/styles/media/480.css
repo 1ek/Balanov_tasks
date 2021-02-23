@@ -1,0 +1,43 @@
+@media screen and (max-width: 480px){
+
+.all{
+    margin: 0;
+}
+
+.aside{
+    flex-direction: column-reverse;
+}
+
+.logo{
+    text-align: center;
+}
+
+.aside-nav{
+    margin: 15px 0;
+}
+
+.posts{
+    flex-direction: column;
+}
+
+.posts__item{
+    margin: 20px 5%;
+}
+
+footer{
+    margin: 0 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

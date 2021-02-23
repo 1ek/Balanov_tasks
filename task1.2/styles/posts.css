@@ -4,8 +4,8 @@
 }
 
 .posts__item {
-  margin-top: 40px;
-  flex: 0 1 205px;
+  margin-top: 20px;
+  flex: 0 1 24%;
 }
 
 .posts__item-img {

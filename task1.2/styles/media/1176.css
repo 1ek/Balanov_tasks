@@ -1,0 +1,19 @@
+@media screen and (max-width: 1176px) {
+  
+  body {
+    width: 992px;
+  }
+
+  .tabs__item-link {
+    padding: 10px 20px;
+  }
+
+  .tabs__item-header {
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .tabs__item-desc {
+    display: none;
+  }
+}
