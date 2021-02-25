@@ -18,6 +18,7 @@
 
 .posts{
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .posts__item{
