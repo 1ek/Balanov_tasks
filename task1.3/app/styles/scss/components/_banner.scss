@@ -1,3 +1,5 @@
+@import "mixins/media-mixins";
+
 .banner {
   background-size: cover;
 }
@@ -8,12 +10,12 @@
 }
 
 .banner__desc-1,
-.banner__desc-2 {
+.banner__desc-2{
   max-width: max-content;
   padding: 10px 25px;
 }
 
-.banner__desc-1 {
+.banner__desc-1{
   background-color: #fff;
   font-size: 22px;
 }
@@ -22,3 +24,19 @@
   background-color: #000;
   color: #fff;
 }
+
+@include _768 {
+  .banner__desc {
+    margin-bottom: 0;
+  }
+
+  .banner__desc-1{
+    opacity: 0.5;
+    max-width: none;
+  }
+
+  .banner__desc-2{
+    max-width: none;
+  }
+}
+

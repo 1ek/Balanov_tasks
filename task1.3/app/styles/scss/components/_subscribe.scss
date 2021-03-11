@@ -1,3 +1,5 @@
+@import "mixins/media-mixins";
+
 .sub {
   margin-top: 20px;
   align-items: center;
@@ -39,4 +41,21 @@
 .sub__btn:active {
   background: #444;
   color: #fff;
+}
+
+@include _768 {
+  .sub {
+    flex-wrap: wrap;
+    background-position-y: 17%;
+  }
+
+  .sub__desc {
+    margin-bottom: 25px;
+  }
+
+  .sub__input {
+    flex: 1;
+    width: 100%;
+    margin-left: 20px;
+  }
 }

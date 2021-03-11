@@ -1,3 +1,5 @@
+@import "mixins/media-mixins";
+
 .tabs__item {
   flex: 1;
 }
@@ -5,12 +7,32 @@
 .tabs__item-link {
   padding: 25px 20px;
   background-color: #eff8f7;
-}
-
-.tabs__item-link:hover {
-  background-color: #d9efec;
+  &:hover {
+    background-color: #d9efec;
+  }
 }
 
 .tabs__item-desc {
   font-size: 10px;
+}
+
+@include _1176 {
+  .tabs__item-link {
+    padding: 10px 20px;
+  }
+
+  .tabs__item-header {
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .tabs__item-desc {
+    display: none;
+  }
+}
+
+@include _768{
+  .tabs{
+    display: none;
+  }
 }

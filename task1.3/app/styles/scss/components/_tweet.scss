@@ -1,5 +1,15 @@
-.tweet-latest__btn,
-.tweet-community__btn {
+@import "mixins/media-mixins";
+
+.tweet-latest {
+  margin-top: 20px;
+}
+
+.tweet-latest__header {
+  border-bottom: 1px dashed #e5e5e5;
+  padding-bottom: 5px;
+}
+
+.tweet-latest__btn {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -12,13 +22,12 @@
   background-position-y: center;
 }
 
-.tweet-latest__btn:active,
-.tweet-community__btn:active {
+.tweet-latest__btn:active {
   border-color: #000;
 }
 
-.tweet-latest {
-  margin-top: 20px;
+.tweet-community__header {
+  @extend .tweet-latest__header;
 }
 
 .tweet-community__desc {
@@ -26,8 +35,17 @@
   line-height: 2em;
 }
 
-.tweet-latest__header,
-.tweet-community__header {
-  border-bottom: 1px dashed #e5e5e5;
-  padding-bottom: 5px;
+.tweet-community__btn {
+  @extend .tweet-latest__btn;
+}
+
+.tweet-community__btn:active {
+  @extend .tweet-latest__btn:active;
+}
+
+@include _992 {
+  .tweet-latest,
+  .tweet-community {
+    display: none;
+  }
 }

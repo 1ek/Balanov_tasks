@@ -1,3 +1,5 @@
+@import "mixins/media-mixins";
+
 .posts {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -29,4 +31,21 @@
 
 .posts__item-link::after {
   content: "...";
+}
+
+@include _768 {
+  .posts__item {
+    flex-basis: 48%;
+  }
+}
+
+@include _480 {
+  .posts {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .posts__item {
+    margin: 20px 5%;
+  }
 }

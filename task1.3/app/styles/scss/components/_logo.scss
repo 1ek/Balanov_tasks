@@ -1,0 +1,7 @@
+@import "mixins/media-mixins";
+
+.logo{
+    @include _480{
+        text-align: center;
+    }
+}
