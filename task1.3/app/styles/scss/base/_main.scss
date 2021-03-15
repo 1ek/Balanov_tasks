@@ -1,8 +1,10 @@
-@import 'mixins/media-mixins';
-
 .main {
-    flex: 5;
-    @include _992{
-      margin-top: 20px;
-    }
+  @include flex(column);
+  flex: 5;
+}
+
+@include media(992) {
+  .main {
+    margin-top: 20px;
   }
+}

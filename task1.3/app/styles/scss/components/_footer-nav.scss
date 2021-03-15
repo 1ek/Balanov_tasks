@@ -1,9 +1,19 @@
-.footer-nav__list > ::after {
+.footer-nav {
+  &__list {
+    @include flex(row);
+  }
+
+  &__list a {
+    color: $primary-color;
+  }
+
+  &__list > ::after {
     content: "|";
     margin: 0 5px 0 5px;
     color: #e5e5e5;
   }
-  
-  .footer-nav__list > :last-child::after {
+
+  &__list > :last-child::after {
     content: "";
   }
+}

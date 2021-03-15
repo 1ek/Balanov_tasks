@@ -1,0 +1,10 @@
+@mixin media($width) {
+  @media screen and (max-width: $width + "px") {
+    @content;
+  }
+}
+
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}

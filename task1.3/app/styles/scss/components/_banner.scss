@@ -1,42 +1,39 @@
-@import "mixins/media-mixins";
-
 .banner {
   background-size: cover;
+
+  &__desc {
+    margin-top: 30%;
+    margin-bottom: 10%;
+  }
+
+  &__desc-1,
+  &__desc-2 {
+    max-width: max-content;
+    padding: 10px 25px;
+  }
+
+  &__desc-1 {
+    background-color: #fff;
+    font-size: 22px;
+  }
+
+  &__desc-2 {
+    background-color: #000;
+    color: #fff;
+  }
 }
 
-.banner__desc {
-  margin-top: 30%;
-  margin-bottom: 10%;
-}
-
-.banner__desc-1,
-.banner__desc-2{
-  max-width: max-content;
-  padding: 10px 25px;
-}
-
-.banner__desc-1{
-  background-color: #fff;
-  font-size: 22px;
-}
-
-.banner__desc-2 {
-  background-color: #000;
-  color: #fff;
-}
-
-@include _768 {
+@include media(768) {
   .banner__desc {
     margin-bottom: 0;
-  }
 
-  .banner__desc-1{
-    opacity: 0.5;
-    max-width: none;
-  }
+    &-1 {
+      opacity: 0.5;
+      max-width: none;
+    }
 
-  .banner__desc-2{
-    max-width: none;
+    &-2 {
+      max-width: none;
+    }
   }
 }
-

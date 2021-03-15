@@ -1,56 +1,18 @@
-@import "mixins/media-mixins";
-
 .aside {
+  @include flex(column);
   flex: 1;
   margin-right: 40px;
-  @include _992 {
+}
+
+@include media(992) {
+  .aside {
     flex-direction: row;
     margin: 0;
   }
-  @include _480 {
+}
+
+@include media(480) {
+  .aside {
     flex-direction: column-reverse;
-  }
-}
-
-.aside-nav {
-  @include _992 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-  }
-  @include _480 {
-    margin: 15px 0;
-  }
-}
-
-.aside-nav__list {
-  @include _992 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-}
-
-.aside-nav__item {
-  @include _992 {
-    margin-top: 0;
-    margin-right: 20px;
-    background-position: top;
-  }
-  @include _768 {
-    background: none;
-    margin: 10px;
-  }
-}
-
-.aside-nav__desc {
-  @include _992 {
-    padding: 40px 0 0 0;
-  }
-  @include _768 {
-    padding: 0;
   }
 }

@@ -1,51 +1,59 @@
-@import "mixins/media-mixins";
-
 .posts {
+  @include flex(row);
   flex-wrap: wrap;
   justify-content: space-between;
+
+  & a {
+    color: $primary-color;
+  }
+
+  &__item {
+    margin-top: 20px;
+    flex: 0 1 24%;
+
+    &-img {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e5e5e5;
+      max-width: -webkit-fill-available;
+    }
+
+    &-header{
+      margin-top: 10px;
+    }
+
+    &-desc {
+      margin-top: 10px;
+      line-height: 20px;
+    }
+
+    &-date {
+      color: #e5e5e5;
+    }
+
+    &-date::after {
+      content: " /";
+    }
+
+    &-link::after {
+      content: "...";
+    }
+  }
 }
 
-.posts__item {
-  margin-top: 20px;
-  flex: 0 1 24%;
-}
-
-.posts__item-img {
-  padding: 10px;
-  border: 1px solid #e5e5e5;
-  max-width: -webkit-fill-available;
-}
-
-.posts__item-desc {
-  margin-top: 10px;
-  line-height: 20px;
-}
-
-.posts__item-date {
-  color: #e5e5e5;
-}
-
-.posts__item-date::after {
-  content: " /";
-}
-
-.posts__item-link::after {
-  content: "...";
-}
-
-@include _768 {
+@include media(768) {
   .posts__item {
     flex-basis: 48%;
   }
 }
 
-@include _480 {
+@include media(480) {
   .posts {
     flex-direction: column;
     flex-wrap: nowrap;
-  }
 
-  .posts__item {
-    margin: 20px 5%;
+    &__item {
+      margin: 20px 5%;
+    }
   }
 }

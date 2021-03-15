@@ -1,0 +1,38 @@
+@import "helpers/all-helpers";
+
+body {
+  font-family: Arial;
+  font-size: 14px;
+  width: 1088px;
+  margin: 0 auto;
+}
+
+.all {
+  @include flex(column);
+  margin: 20px;
+}
+
+.container{
+  @include flex(row);
+}
+
+@include media(1176) {
+  body {
+    width: 992px;
+  }
+}
+
+@include media(992) {
+  body {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+
+@include media(480){
+  .all {
+    margin: 0;
+  }
+}

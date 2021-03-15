@@ -1,38 +1,44 @@
-@import "mixins/media-mixins";
+.tabs {
+  @include flex(row);
 
-.tabs__item {
-  flex: 1;
-}
+  &__item {
+    flex: 1;
 
-.tabs__item-link {
-  padding: 25px 20px;
-  background-color: #eff8f7;
-  &:hover {
-    background-color: #d9efec;
+    &-link {
+      display: block;
+      color: $primary-color;
+      padding: 25px 20px;
+      background-color: #eff8f7;
+      &:hover {
+        background-color: #d9efec;
+      }
+    }
+
+    &-desc {
+      font-size: 10px;
+    }
   }
 }
 
-.tabs__item-desc {
-  font-size: 10px;
-}
+@include media(1176) {
+  .tabs__item {
+    &-link {
+      padding: 10px 20px;
+    }
 
-@include _1176 {
-  .tabs__item-link {
-    padding: 10px 20px;
-  }
+    &-header {
+      font-weight: normal;
+      text-align: center;
+    }
 
-  .tabs__item-header {
-    font-weight: normal;
-    text-align: center;
-  }
-
-  .tabs__item-desc {
-    display: none;
+    &-desc {
+      display: none;
+    }
   }
 }
 
-@include _768{
-  .tabs{
+@include media(768) {
+  .tabs {
     display: none;
   }
 }

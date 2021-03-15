@@ -1,15 +1,19 @@
-.community-icons > :nth-child(n) {
+.community-icons {
+  @include flex(row);
+
+  & > :nth-child(n) {
     margin-right: 10px;
   }
-  
-  .community-icons > :last-child {
+
+  & > :last-child {
     margin-right: 0px;
   }
-  
-  .community-icons__link {
+
+  &__link {
+    display: block;
     width: 32px;
     height: 32px;
     background-size: cover;
     filter: opacity(0.1);
   }
-  
+}

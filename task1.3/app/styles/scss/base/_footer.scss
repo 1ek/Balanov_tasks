@@ -1,10 +1,14 @@
 footer {
+  @include flex(row);
   height: 90px;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
   border-top: 2px solid #e5e5e5;
-  @include _480 {
+}
+
+@include media(480){
+  footer{
     margin: 0 5%;
   }
 }
