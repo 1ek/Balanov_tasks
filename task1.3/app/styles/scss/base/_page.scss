@@ -28,6 +28,9 @@ body {
   }
   .container {
     flex-direction: column;
+    @include ie{
+      display: block;
+    }
   }
 }
 

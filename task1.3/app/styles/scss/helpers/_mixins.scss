@@ -4,6 +4,12 @@
   }
 }
 
+@mixin ie{
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
 @mixin flex($direction) {
   display: flex;
   flex-direction: $direction;

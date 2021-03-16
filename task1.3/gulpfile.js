@@ -7,7 +7,6 @@ const del = require("del");
 
 function browsersync() {
   browserSync.init({
-    // Инициализация Browsersync
     server: { baseDir: "app/" }, // Указываем папку сервера
     notify: false, // Отключаем уведомления
     online: true, // Режим работы: true или false
@@ -18,14 +17,14 @@ function styles() {
   return src("app/styles/scss/style.scss")
     .pipe(sass())
     .pipe(
-      autoprefixer({ overrideBrowserslist: ["last 10 version"], grid: true })
+      autoprefixer({ overrideBrowserslist: ["last 11 version"], grid: true })
     )
     .pipe(
       cleancss({
         level: { 1: { specialComments: 0 } } /* , format: 'beautify' */,
       })
     )
-    .pipe(dest("app/styles/css/"))
+    .pipe(dest("app/styles/css"))
     .pipe(browserSync.stream());
 }
 

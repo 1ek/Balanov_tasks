@@ -16,6 +16,9 @@
       padding: 10px;
       border: 1px solid #e5e5e5;
       max-width: -webkit-fill-available;
+      @include ie{
+        max-width: 90%;
+      }
     }
 
     &-header{
@@ -51,6 +54,9 @@
   .posts {
     flex-direction: column;
     flex-wrap: nowrap;
+    @include ie{
+      display: block;
+    }
 
     &__item {
       margin: 20px 5%;
