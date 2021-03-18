@@ -1,6 +1,10 @@
 .tabs {
   @include flex(row);
 
+  @include media($tablet) {
+    display: none;
+  }
+
   &__item {
     flex: 1;
 
@@ -12,33 +16,25 @@
       &:hover {
         background-color: #d9efec;
       }
+
+      @include media($desktop) {
+        padding: 10px 20px;
+      }
+    }
+
+    &-header {
+      @include media($desktop) {
+        font-weight: normal;
+        text-align: center;
+      }
     }
 
     &-desc {
       font-size: 10px;
-    }
-  }
-}
 
-@include media(1176) {
-  .tabs__item {
-    &-link {
-      padding: 10px 20px;
+      @include media($desktop) {
+        display: none;
+      }
     }
-
-    &-header {
-      font-weight: normal;
-      text-align: center;
-    }
-
-    &-desc {
-      display: none;
-    }
-  }
-}
-
-@include media(768) {
-  .tabs {
-    display: none;
   }
 }

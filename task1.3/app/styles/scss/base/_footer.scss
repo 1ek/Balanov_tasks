@@ -5,10 +5,7 @@ footer {
   align-items: center;
   font-size: 12px;
   border-top: 2px solid #e5e5e5;
-}
-
-@include media(480){
-  footer{
+  @include media($mobile) {
     margin: 0 5%;
   }
 }

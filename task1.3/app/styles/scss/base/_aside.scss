@@ -2,17 +2,13 @@
   @include flex(column);
   flex: 1;
   margin-right: 40px;
-}
 
-@include media(992) {
-  .aside {
+  @include media($laptop) {
     flex-direction: row;
     margin: 0;
   }
-}
 
-@include media(480) {
-  .aside {
+  @include media($mobile) {
     flex-direction: column-reverse;
   }
 }

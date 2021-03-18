@@ -3,6 +3,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @include media($mobile) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    @include ie {
+      display: block;
+    }
+  }
+
   & a {
     color: $primary-color;
   }
@@ -11,17 +19,25 @@
     margin-top: 20px;
     flex: 0 1 24%;
 
+    @include media($tablet) {
+      flex-basis: 48%;
+    }
+
+    @include media($mobile) {
+      margin: 20px 5%;
+    }
+
     &-img {
       width: 100%;
       padding: 10px;
       border: 1px solid #e5e5e5;
       max-width: -webkit-fill-available;
-      @include ie{
+      @include ie {
         max-width: 90%;
       }
     }
 
-    &-header{
+    &-header {
       margin-top: 10px;
     }
 
@@ -40,26 +56,6 @@
 
     &-link::after {
       content: "...";
-    }
-  }
-}
-
-@include media(768) {
-  .posts__item {
-    flex-basis: 48%;
-  }
-}
-
-@include media(480) {
-  .posts {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    @include ie{
-      display: block;
-    }
-
-    &__item {
-      margin: 20px 5%;
     }
   }
 }

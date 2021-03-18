@@ -1,38 +1,36 @@
 .banner {
   background-size: cover;
 
-  &__desc {
+  &__text {
     margin-top: 30%;
     margin-bottom: 10%;
+
+    @include media($tablet) {
+      margin-bottom: 0;
+    }
   }
 
-  &__desc-1,
-  &__desc-2 {
+  &__title,
+  &__desc {
     max-width: max-content;
     padding: 10px 25px;
   }
 
-  &__desc-1 {
+  &__title {
     background-color: #fff;
     font-size: 22px;
-  }
 
-  &__desc-2 {
-    background-color: #000;
-    color: #fff;
-  }
-}
-
-@include media(768) {
-  .banner__desc {
-    margin-bottom: 0;
-
-    &-1 {
+    @include media($tablet) {
       opacity: 0.5;
       max-width: none;
     }
+  }
 
-    &-2 {
+  &__desc {
+    background-color: #000;
+    color: #fff;
+
+    @include media($tablet) {
       max-width: none;
     }
   }

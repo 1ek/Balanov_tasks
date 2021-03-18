@@ -5,37 +5,31 @@ body {
   font-size: 14px;
   width: 1088px;
   margin: 0 auto;
+
+  @include media($desktop) {
+    width: 992px;
+  }
+  @include media($laptop) {
+    width: 100%;
+  }
 }
 
 .all {
   @include flex(column);
   margin: 20px;
+
+  @include media($mobile) {
+    margin: 0;
+  }
 }
 
-.container{
+.container {
   @include flex(row);
-}
-
-@include media(1176) {
-  body {
-    width: 992px;
-  }
-}
-
-@include media(992) {
-  body {
-    width: 100%;
-  }
-  .container {
+  
+  @include media($laptop) {
     flex-direction: column;
-    @include ie{
+    @include ie {
       display: block;
     }
-  }
-}
-
-@include media(480){
-  .all {
-    margin: 0;
   }
 }

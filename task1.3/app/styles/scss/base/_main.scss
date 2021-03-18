@@ -1,10 +1,7 @@
 .main {
   @include flex(column);
   flex: 5;
-}
-
-@include media(992) {
-  .main {
+  @include media($laptop) {
     margin-top: 20px;
   }
 }

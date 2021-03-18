@@ -19,7 +19,6 @@
     background-position-y: center;
     font-size: 10px;
     color: $primary-color;
-
   }
 
   &__btn:active {
@@ -47,9 +46,9 @@
   }
 }
 
-@include media(992) {
-  .tweet-latest,
-  .tweet-community {
+.tweet-latest,
+.tweet-community {
+  @include media($laptop) {
     display: none;
   }
 }
