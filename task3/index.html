@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Game on Canvas</h1>
+        <div id="desc">
+
+            <div id="hello-game">
+                <p>Добро пожаловать в игру Понг!</p>
+                <p>Игра идёт до 10 очков.</p>
+                <p>Управление стрелками.</p>
+                <p>Приятной игры</p>
+                <button id="btn-start">Начать</button>
+            </div>
+
+            <div id="player-win">
+                <p>Вы победили</p>
+            </div>
+
+            <div id="ai-win">
+                <p>Вы проиграли</p>
+            </div>
+
+            <button id="btn-restart">Ещё раз</button>
+        </div>
+
+        <div id="canvas-game">
+            <canvas id="canvas" width="1000" height="700"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

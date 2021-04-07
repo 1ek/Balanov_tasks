@@ -1,0 +1,51 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #373737;
+  color: white;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header{
+    text-align: center;
+}
+
+#desc{
+    height: 700px;
+    background-color: #ffdf8c;
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hello-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player-win,
+#ai-win,
+#btn-restart{
+display: none;
+}
+
+#btn-start,
+#btn-restart{
+    width: 100px;
+}
+
+#canvas {
+  background-color: #ffdf8c;
+}
+
+.hidden {
+  display: none;
+}
