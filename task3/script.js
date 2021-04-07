@@ -15,7 +15,7 @@ let interval;
 const ball = {
   x: canvas.width / 2,
   y: canvas.height / 2,
-  dx: 30,
+  dx: 3,
   dy: 3,
   radius: 10,
 };

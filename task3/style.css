@@ -42,6 +42,10 @@ display: none;
     width: 100px;
 }
 
+#canvas-game{
+  display: none;
+}
+
 #canvas {
   background-color: #ffdf8c;
 }
