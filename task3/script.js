@@ -86,7 +86,6 @@ function create_ball() {
 }
 
 document.addEventListener("keydown", function (keyboard) {
-  console.log(keyboard.code);
   if (keyboard.code == "ArrowDown") {
     ArrowDownPressed = true;
   } else if (keyboard.code == "ArrowUp") {
