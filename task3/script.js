@@ -15,8 +15,9 @@ let interval;
 const ball = {
   x: canvas.width / 2,
   y: canvas.height / 2,
-  dx: 3,
-  dy: 3,
+  dx:3,
+  dy:3,
+  speed: 2,
   radius: 10,
 };
 
@@ -34,7 +35,7 @@ const player = {
 const ai = {
   x: canvas.width * 0.95,
   y: (canvas.height - racket.height) / 2,
-  difficult: ball.dy * 0.87,
+  difficult: 2,
   score: 0,
 };
 
@@ -49,9 +50,17 @@ btn_restart.addEventListener("click", function () {
   desc.style.display = "none";
   player_win.style.display = ai_win.style.display = 'none';
   player.score = ai.score = 0;
+  reset();
   canvas_game.style.display = "block";
   interval = setInterval(game, 15);
 });
+
+function reset (){
+  player.score = ai.score = 0;
+  ball.dx = ball.dy = 3;
+  ball.speed = 2;
+  ai.difficult = 2;
+}
 
 function block(x, y, width, height, color) {
   ctx.beginPath();
@@ -61,17 +70,17 @@ function block(x, y, width, height, color) {
 }
 
 function create_player() {
-  new block(player.x, player.y, racket.width, racket.height, "red");
+  new block(player.x, player.y, racket.width, racket.height, "#FF0000");
 }
 
 function create_ai() {
-  new block(ai.x, ai.y, racket.width, racket.height, "black");
+  new block(ai.x, ai.y, racket.width, racket.height, "#000000");
 }
 
 function create_ball() {
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
-  ctx.fillStyle = "blue";
+  ctx.fillStyle = "#0000FF";
   ctx.fill();
   ctx.closePath();
 }
@@ -143,35 +152,43 @@ function move_ai() {
   } else if (ai.y + racket.height / 2 > ball.y && ai.y > 0) {
     ai.y -= ai.difficult;
   }
+  if (player.score > 2){
+    ai.difficult = ball.speed*0.86;
+  }
 }
 
 function center_line() {
   for (var i = 0; i < canvas.height; i += 45) {
-    ctx.fillStyle = "grey";
+    ctx.fillStyle = "#808080";
     ctx.fillRect(canvas.width / 2, i, 20, 30);
   }
 }
 
 function score() {
   ctx.font = "bold 128px courier";
-  //ctx.textAlign = 'center';
   ctx.textBaseline = "top";
-  ctx.fillStyle = "grey";
-  ctx.fillText(player.score, canvas.width * 0.75, 0);
-  ctx.fillText(ai.score, canvas.width * 0.25, 0);
+  ctx.fillStyle = "#808080";
+  ctx.fillText(player.score, canvas.width * 0.25, 0);
+  ctx.fillText(ai.score, canvas.width * 0.75, 0);
+
+  let random1 = Math.random() < 0.5 ? -1 : 1;
+  let random2 = Math.random() < 0.5 ? -1 : 1;
 
   if (ball.x < player.x) {
     ball.x = canvas.width / 2;
     ball.y = canvas.height / 2;
-    ball.dx = -ball.dx;
-    ball.dy = -ball.dy;
+    ball.dx = random1 * ball.dx;
+    ball.dy = random2 * ball.dy;
     ai.score++;
   }
   if (ball.x > ai.x) {
     ball.x = canvas.width / 2;
     ball.y = canvas.height / 2;
-    ball.dx = -ball.dx;
-    ball.dy = -ball.dy;
+    ball.speed <10 ? ball.speed++ : ball.speed;
+    ball.dx = ball.speed;
+    ball.dy = ball.speed;
+    ball.dx = random1 * ball.dx;
+    ball.dy = random2 * ball.dy;
     player.score++;
   }
 }
