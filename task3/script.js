@@ -15,11 +15,13 @@ let interval;
 const ball = {
   x: canvas.width / 2,
   y: canvas.height / 2,
-  dx:3,
-  dy:3,
-  speed: 2,
+  dx:0,
+  dy:0,
+  speed: 3,
   radius: 10,
 };
+
+ball.dx = ball.dy = ball.speed
 
 const racket = {
   width: canvas.width * 0.01,
@@ -35,7 +37,8 @@ const player = {
 const ai = {
   x: canvas.width * 0.95,
   y: (canvas.height - racket.height) / 2,
-  difficult: 2,
+  speed:2, 
+  difficult: 0.86,
   score: 0,
 };
 
@@ -49,7 +52,6 @@ btn_start.addEventListener("click", function () {
 btn_restart.addEventListener("click", function () {
   desc.style.display = "none";
   player_win.style.display = ai_win.style.display = 'none';
-  player.score = ai.score = 0;
   reset();
   canvas_game.style.display = "block";
   interval = setInterval(game, 15);
@@ -57,9 +59,8 @@ btn_restart.addEventListener("click", function () {
 
 function reset (){
   player.score = ai.score = 0;
-  ball.dx = ball.dy = 3;
-  ball.speed = 2;
-  ai.difficult = 2;
+  ball.dx = ball.dy = ball.speed = 3;
+  ai.speed = 2;
 }
 
 function block(x, y, width, height, color) {
@@ -147,12 +148,12 @@ function move_ai() {
     ai.y + racket.height / 2 < ball.y &&
     ai.y < canvas.height - racket.height
   ) {
-    ai.y += ai.difficult;
+    ai.y += ai.speed;
   } else if (ai.y + racket.height / 2 > ball.y && ai.y > 0) {
-    ai.y -= ai.difficult;
+    ai.y -= ai.speed;
   }
-  if (player.score > 2){
-    ai.difficult = ball.speed*0.86;
+  if (player.score >= 2){
+    ai.speed = ball.speed*ai.difficult;
   }
 }
 
@@ -184,8 +185,7 @@ function score() {
     ball.x = canvas.width / 2;
     ball.y = canvas.height / 2;
     ball.speed <10 ? ball.speed++ : ball.speed;
-    ball.dx = ball.speed;
-    ball.dy = ball.speed;
+    ball.dx = ball.dy = ball.speed;
     ball.dx = random1 * ball.dx;
     ball.dy = random2 * ball.dy;
     player.score++;
